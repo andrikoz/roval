@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROVAL Μονοπρόσωπη Ι.Κ.Ε.</title>
+<meta name="description" content="ROVAL ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε — Διάθεση διαφημιστικού χώρου και συμβουλευτικές υπηρεσίες μάρκετινγκ. Εταιρική διαφάνεια.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #1a1420;
+    --bg-deep: #120e17;
+    --frame: #c9a3d8;
+    --ink: #ece7ee;
+    --muted: #a596ac;
+    --line: rgba(201,163,216,0.22);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.mark{
+    font-family:'Archivo', sans-serif;
+    letter-spacing:-0.01em;
+  }
+  a{color:var(--ink);}
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---- Hero ---- */
+  .hero{
+    padding:96px 0 76px;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+  }
+  .hero .mark{
+    width:88px;
+    height:88px;
+    margin:0 auto 34px;
+    border-radius:6px;
+    border:1px solid var(--frame);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    font-weight:700;
+    color:var(--frame);
+  }
+  .hero h1{
+    font-size:clamp(28px, 5vw, 40px);
+    font-weight:700;
+    margin:0 0 6px;
+    color:var(--ink);
+  }
+  .hero .sub-name{
+    font-size:14px;
+    letter-spacing:0.14em;
+    color:var(--muted);
+    margin:0 0 26px;
+    font-weight:500;
+  }
+  .hero p.tagline{
+    max-width:440px;
+    margin:0 auto;
+    color:var(--muted);
+    font-size:16px;
+  }
+  .hero .status{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:30px;
+    padding:7px 16px;
+    border:1px solid var(--line);
+    border-radius:100px;
+    font-size:13px;
+    color:var(--muted);
+  }
+  .hero .status .dot{
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#9fb08a;
+    display:inline-block;
+  }
+
+  /* ---- Sections ---- */
+  section.block{
+    padding:64px 0;
+    border-bottom:1px solid var(--line);
+  }
+  section.block:last-of-type{border-bottom:none;}
+  .eyebrow{
+    font-size:13px;
+    color:var(--frame);
+    margin:0 0 8px;
+    font-weight:500;
+  }
+  h2{
+    font-size:24px;
+    font-weight:600;
+    margin:0 0 34px;
+    color:var(--ink);
+  }
+
+  dl.facts{
+    display:grid;
+    grid-template-columns:1fr;
+    row-gap:0;
+    margin:0;
+  }
+  dl.facts .row{
+    display:grid;
+    grid-template-columns:200px 1fr;
+    gap:16px;
+    padding:16px 0;
+    border-top:1px solid var(--line);
+  }
+  dl.facts .row:last-child{border-bottom:1px solid var(--line);}
+  dl.facts dt{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+  }
+  dl.facts dd{
+    margin:0;
+    font-size:15px;
+    color:var(--ink);
+  }
+  dl.facts dd a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:1px;
+  }
+  dl.facts dd a:hover{border-color:var(--frame);}
+
+  /* ---- People ---- */
+  .people{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .person{
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:22px 20px;
+  }
+  .person .name{
+    font-family:'Archivo', sans-serif;
+    font-size:17px;
+    font-weight:600;
+    margin:0 0 12px;
+  }
+  .person .role{
+    display:inline-block;
+    font-size:12px;
+    color:var(--bg-deep);
+    background:var(--frame);
+    padding:3px 10px;
+    border-radius:100px;
+    margin:0 6px 6px 0;
+  }
+  .person .share{
+    margin-top:12px;
+    font-size:13px;
+    color:var(--muted);
+  }
+
+  /* ---- Footer ---- */
+  footer{
+    padding:40px 0 56px;
+    text-align:center;
+  }
+  footer p{
+    font-size:13px;
+    color:var(--muted);
+    margin:4px 0;
+  }
+
+  @media (max-width:560px){
+    .hero{padding:64px 0 48px;}
+    dl.facts .row{grid-template-columns:1fr;gap:4px;padding:14px 0;}
+    .people{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+  <header class="hero wrap">
+    <div class="mark">R</div>
+    <h1>Roval</h1>
+    <p class="sub-name">R O V A L &nbsp;·&nbsp; Μονοπρόσωπη Ι Κ Ε</p>
+    <p class="tagline">Διάθεση διαφημιστικού χώρου στο διαδίκτυο και συμβουλευτικές υπηρεσίες μάρκετινγκ.</p>
+    <div class="status"><span class="dot"></span> Ενεργή επιχείρηση</div>
+  </header>
+
+  <section class="block wrap">
+    <p class="eyebrow">Εταιρική διαφάνεια</p>
+    <h2>Εταιρικά στοιχεία</h2>
+    <dl class="facts">
+      <div class="row">
+        <dt>Επωνυμία</dt>
+        <dd>ROVAL ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε</dd>
+      </div>
+      <div class="row">
+        <dt>Διακριτικός τίτλος</dt>
+        <dd>ROVAL</dd>
+      </div>
+      <div class="row">
+        <dt>Νομική μορφή</dt>
+        <dd>Μονοπρόσωπη Ιδιωτική Κεφαλαιουχική Εταιρεία</dd>
+      </div>
+      <div class="row">
+        <dt>Εταιρικό κεφάλαιο</dt>
+        <dd>10.000,00 €</dd>
+      </div>
+      <div class="row">
+        <dt>Α.Φ.Μ.</dt>
+        <dd>802597239</dd>
+      </div>
+      <div class="row">
+        <dt>Αρμόδια Δ.Ο.Υ.</dt>
+        <dd>ΚΕΦΟΔΕ Θεσσαλονίκης</dd>
+      </div>
+      <div class="row">
+        <dt>Αριθμός Γ.Ε.ΜΗ.</dt>
+        <dd>179292306000</dd>
+      </div>
+      <div class="row">
+        <dt>Έδρα / διεύθυνση</dt>
+        <dd>10ο χλμ. Θεσσαλονίκης – Κιλκίς, Τ.Κ. 54500, Νεοχωρούδα</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="block wrap">
+    <p class="eyebrow">Εταίρος &amp; διαχείριση</p>
+    <h2>Μέλος της εταιρείας</h2>
+    <div class="people">
+      <div class="person">
+        <p class="name">Ροδακοπούλου Βαλεντίνη</p>
+        <span class="role">Διαχειρίστρια</span>
+        <span class="role">Μέλος</span>
+        <p class="share">Ποσοστό συμμετοχής: 100%</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <p>ROVAL ΜΟΝΟΠΡΟΣΩΠΗ Ι Κ Ε &nbsp;·&nbsp; Α.Φ.Μ. 802597239</p>
+    <p>© 2026 Roval</p>
+  </footer>
+
+</body>
+</html>
